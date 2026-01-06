@@ -34,7 +34,7 @@ class TuiFlow:
 
 
     def run(self):
-        print("Hello I am your jakdojade planner agent. Answer a few questions about your event plan.")
+        logger.info("Hello I am your jakdojade planner agent. Answer a few questions about your event plan.")
         questions = {
             "city": "What city are you in?",
             "start": "What is your starting destination?",
@@ -47,5 +47,5 @@ class TuiFlow:
             answers[q_key] = self.ask_question(q_value)
 
         user_prompt = self.format_user_prompt(answers)
-        print(user_prompt)
+        logger.info(user_prompt)
         self.agent.run(self.instructions_prompt + user_prompt)
