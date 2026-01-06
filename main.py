@@ -1,3 +1,4 @@
+import helium
 from smolagents import InferenceClientModel
 
 from tui_flow import TuiFlow
@@ -20,6 +21,7 @@ def main():
     agent = WebBrowsingAgent(InferenceClientModel, args.model)
     tui = TuiFlow(agent, args.task_prompt, args.user_prompt)
     tui.run()
+    helium.kill_browser()
 
 
 if __name__ == "__main__":
