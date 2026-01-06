@@ -1,0 +1,8 @@
+smolagents~=1.23.0
+selenium~=4.39.0
+helium~=5.1.2
+pillow~=12.1.0
+google-api-python-client~=2.187.0
+google-auth-httplib2~=0.3.0
+google-auth-oauthlib~=1.2.3
+dotenv~=0.9.9
