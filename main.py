@@ -5,6 +5,9 @@ from tui_flow import TuiFlow
 from web_browsing_agent import WebBrowsingAgent
 import argparse
 from utils import init_browser_driver
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 
 def parse_args():
